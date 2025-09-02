@@ -1,69 +1,109 @@
-# React + TypeScript + Vite
+# Encryptions Demo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A lightweight, educational React application that demonstrates three classical and modern encryption algorithms:
 
-Currently, two official plugins are available:
+- **Caesar Cipher**
+- **RSA (Rivest–Shamir–Adleman)**
+- **AES-GCM (Advanced Encryption Standard – Galois/Counter Mode)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Built with **React**, **TypeScript**, and **Vite**, this app shows how encryption works under the hood using real browser APIs and custom logic.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Screenshots
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## Live Demo
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Live Demo: [https://ejzimmer.com/encryptions](https://ejzimmer.com/encryptions)
+
+---
+
+## Features
+
+### Caesar Cipher
+
+- Classical substitution cipher
+- Shifts letters by a fixed amount
+- Easily cracked by brute force (25 shifts)
+
+### AES-GCM Encryption
+
+- Uses Web Crypto API
+- Symmetric encryption (same key for encryption & decryption)
+- 256-bit AES key with unique IV on every message
+- Output shown in Base64
+
+### RSA Encryption
+
+- Asymmetric encryption (public key & private key)
+- Keypair generation
+- Basic encryption & decryption of small messages
+
+---
+
+## Tech Stack
+
+- React (with TypeScript)
+- Vite
+- Bootstrap (for styling)
+- Web Crypto API (`window.crypto.subtle`) for AES
+
+---
+
+## Project Structure
+
+```text
+src/
+├── components/
+│   ├── caeser-cipher
+│       └── CaeserCipher.tsx
+│   ├── aes
+│       └── Aes.tsx
+│   └── rsa
+│       └── Rsa.tsx
+│   └── home
+│       └── Home.tsx
+│   └── footer
+│       └── Footer.tsx
+│   └── navbar
+│       └── Navbar.tsx
+├── App.tsx
+├── App.css
+├── Routes.tsx
+├── main.tsx
+├── vite.config.ts
+└── index.html
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## How to Run Locally
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. Clone the repo:
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```text
+git clone https://github.com/EricZimmer87/encryption-app.git
+cd encryption-app
 ```
+
+2. Install Dependencies:
+
+```text
+npm install
+```
+
+3. Run the App:
+
+```text
+npm run dev
+```
+
+4. Build for Production:
+
+```text
+npm run build
+```
+
+## Author
+
+Eric Zimmer [https://www.ejzimmer.com]

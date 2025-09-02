@@ -22,6 +22,12 @@ function Home() {
           <Link to="/aes">AES</Link>
         </li>
       </ul>
+
+      <br />
+      <p>Click here to view the source code:</p>
+      <a href="https://github.com/EricZimmer87/encryption-app">
+        https://github.com/EricZimmer87/encryption-app
+      </a>
     </>
   );
 }

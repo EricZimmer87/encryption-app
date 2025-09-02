@@ -8,7 +8,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/encryptions">
       <App />
     </BrowserRouter>
   </StrictMode>,
