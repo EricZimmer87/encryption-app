@@ -18,6 +18,22 @@ Built with **React**, **TypeScript**, and **Vite**, this app shows how encryptio
 
 ## Screenshots
 
+### Home
+
+![Home Screenshot](screenshots/home.png)
+
+### Caesar Cipher
+
+![Caesar Cipher Screenshot](screenshots/caesar-cipher.png)
+
+### AES
+
+![AES Screenshot](screenshots/aes.png)
+
+### RSA
+
+![RSA Screenshot](screenshots/rsa.png)
+
 ---
 
 ## Features
