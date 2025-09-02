@@ -106,4 +106,4 @@ npm run build
 
 ## Author
 
-Eric Zimmer [https://www.ejzimmer.com]
+Eric Zimmer [https://www.ejzimmer.com](https://www.ejzimmer.com)
