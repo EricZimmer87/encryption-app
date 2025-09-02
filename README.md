@@ -10,13 +10,13 @@ Built with **React**, **TypeScript**, and **Vite**, this app shows how encryptio
 
 ---
 
-## Screenshots
+## Live Demo
+
+[https://ejzimmer.com/encryptions](https://ejzimmer.com/encryptions)
 
 ---
 
-## Live Demo
-
-Live Demo: [https://ejzimmer.com/encryptions](https://ejzimmer.com/encryptions)
+## Screenshots
 
 ---
 
