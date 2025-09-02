@@ -20,19 +20,19 @@ Built with **React**, **TypeScript**, and **Vite**, this app shows how encryptio
 
 ### Home
 
-![Home Screenshot](screenshots/home.png)
+![Home Screenshot](screenshots/encryptions-home.png)
 
 ### Caesar Cipher
 
-![Caesar Cipher Screenshot](screenshots/caesar-cipher.png)
+![Caesar Cipher Screenshot](screenshots/encryptions-caesar-cipher.png)
 
 ### AES
 
-![AES Screenshot](screenshots/aes.png)
+![AES Screenshot](screenshots/encryptions-aes.png)
 
 ### RSA
 
-![RSA Screenshot](screenshots/rsa.png)
+![RSA Screenshot](screenshots/encryptions-rsa.png)
 
 ---
 
